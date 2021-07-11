@@ -1,5 +1,9 @@
 .about {
 
+  &__col {
+    width: 100%;
+  }
+
   &__para {
     display: block;
     width: 100%;
@@ -30,5 +34,52 @@
     left: 1rem;
     top: .5rem;
 
+  }
+
+  &__image-con {
+    width: 100%;
+    // height: 20%;
+    // padding: 4rem;
+    position: relative;
+    z-index: 1;
+    top: -6rem;
+
+    &::after {
+      content: "";
+      // padding: 8rem 0;
+      position: absolute;
+      width: 70%;
+      height: 110%;
+      top: -5%;
+      left: 5%;
+      // right: 21rem;
+      z-index: -4;
+      display: inline-block;
+      border: .1rem solid $color-secondary;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+      .about__image {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+
+
+  &__image {
+    width: 80%;
+    // height: 20%;
+    filter: grayscale(100%);
+    z-index: -1;
+
+    &:hover {
+      filter: grayscale(0);
+
+    }
   }
 }
