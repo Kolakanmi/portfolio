@@ -1,0 +1,36 @@
+.navigation {
+  background-color: $color-primary;
+
+  &__nav {
+    margin-left: auto;
+    width: 21%;
+    padding: 2rem 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-secondary;
+      display: inline-block;
+    }
+    &:active,
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__image {
+    width: 1.5rem;
+  }
+}

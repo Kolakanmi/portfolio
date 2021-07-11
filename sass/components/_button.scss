@@ -1,0 +1,47 @@
+.button {
+  display: block;
+  color: $color-secondary;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  &:link,
+  &:visited {
+    border: .1rem solid $color-secondary;
+    padding: 1rem;
+    width: 10%;
+    text-align: center;
+  }
+
+  // &:hover,
+  // &:active {
+  //   // opacity: .1;
+  //   // background-color: $color-secondary;
+  //   // color: $color-secondary;
+  // }
+
+  &--overlay {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: $color-white;
+      background-color: $color-secondary;
+      opacity: 0;
+    }
+
+    &:hover {
+      border: 0;
+      font-weight: 600;
+    }
+
+    &:hover::before {
+      opacity: 0.1;
+    }
+  }
+}
+

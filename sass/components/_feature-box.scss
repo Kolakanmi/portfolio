@@ -1,0 +1,13 @@
+.feature-box {
+  border: .1rem solid $color-secondary;
+  padding: 4rem;
+  transition: transform .3s;
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__row {
+    margin-left: 10rem;
+  }
+}

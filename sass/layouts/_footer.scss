@@ -1,0 +1,27 @@
+.footer {
+  
+  &__con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__paragraph {
+    display: inline-block;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+
+  }
+}

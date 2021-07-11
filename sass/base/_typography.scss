@@ -1,0 +1,52 @@
+.heading-paragraph {
+  color: $color-white;
+  font-size: 1.5rem;
+
+  &--sub {
+  display: inline-block;
+  width: 40%;
+  }
+
+  &--span {
+  color: $color-white;
+  font-size: 1.5rem;
+  opacity: .5;
+  }
+}
+
+.heading-main {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 5.8rem;
+  font-family: sans-serif;
+
+  &--sub {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 5.8rem;
+  font-family: sans-serif;
+  opacity: .5;
+  }
+}
+
+.heading-secondary {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 3.8rem;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.heading-primary {
+  color: $color-white;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &--sub {
+    color: $color-white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
