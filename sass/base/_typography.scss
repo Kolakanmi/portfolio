@@ -43,7 +43,7 @@
 .heading-main {
   color: $color-white;
   font-weight: 700;
-  font-size: 6.2rem;
+  font-size: 6rem;
   font-family: sans-serif;
 
   @include respond(phone) {
@@ -53,7 +53,7 @@
   &--sub {
   color: $color-white;
   font-weight: 700;
-  font-size: 6.2rem;
+  font-size: 6rem;
   font-family: sans-serif;
   opacity: .5;
 
@@ -74,13 +74,13 @@
 .heading-primary {
   color: $color-white;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-family: Arial, Helvetica, sans-serif;
 
   &--sub {
     color: $color-white;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-family: Arial, Helvetica, sans-serif;
   }
 }

@@ -1,10 +1,13 @@
 .navigation {
   background-color: $color-primary;
 
+  &__row {
+    margin-bottom: 0rem !important;
+  }
 
   &__nav {
     margin-left: auto;
-    width: 30%;
+    width: 35%;
     padding: 2rem 0;
     
     @include respond(tab-land) {

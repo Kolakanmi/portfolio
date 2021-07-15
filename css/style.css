@@ -49,7 +49,7 @@ body {
 .heading-main {
   color: #fff;
   font-weight: 700;
-  font-size: 6.2rem;
+  font-size: 6rem;
   font-family: sans-serif; }
   @media (max-width: 37.5em) {
     .heading-main {
@@ -57,7 +57,7 @@ body {
   .heading-main--sub {
     color: #fff;
     font-weight: 700;
-    font-size: 6.2rem;
+    font-size: 6rem;
     font-family: sans-serif;
     opacity: .5; }
     @media (max-width: 37.5em) {
@@ -74,12 +74,12 @@ body {
 .heading-primary {
   color: #fff;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-family: Arial, Helvetica, sans-serif; }
   .heading-primary--sub {
     color: #fff;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-family: Arial, Helvetica, sans-serif; }
 
 .u-margin-bottom-small {
@@ -123,7 +123,7 @@ body {
 .about__list {
   list-style: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   opacity: .5; }
   @media (max-width: 75em) {
     .about__list {
@@ -147,12 +147,15 @@ body {
   display: inline-block;
   position: absolute;
   left: 1rem;
-  top: .5rem; }
+  top: .9rem; }
   @media (max-width: 75em) {
     .about__items-span {
       font-size: 3rem;
       width: 1.4rem;
-      height: 1.4rem; } }
+      height: 1.4rem;
+      height: .7rem;
+      width: .7rem;
+      top: .5rem; } }
 
 .about__image-con {
   width: 100%;
@@ -186,7 +189,7 @@ body {
   display: block;
   color: #BAFF00;
   text-decoration: none;
-  font-size: 1.5rem; }
+  font-size: 2.4rem; }
   @media (max-width: 75em) {
     .button {
       font-size: 3rem; } }
@@ -196,7 +199,7 @@ body {
   .button:link, .button:visited {
     border: 0.1rem solid #BAFF00;
     padding: 1rem;
-    width: 10%;
+    width: 20%;
     text-align: center; }
     @media (max-width: 75em) {
       .button:link, .button:visited {
@@ -240,8 +243,12 @@ body {
       width: 100%; } }
   .feature-box__con:hover {
     transform: translateY(-1.5rem); }
-  .feature-box__con__row {
-    margin-left: 10rem; }
+
+.feature-box__row {
+  margin-left: 10rem; }
+  @media (max-width: 75em) {
+    .feature-box__row {
+      margin-left: 0rem; } }
 
 .form__group {
   margin-bottom: 4rem;
@@ -250,9 +257,9 @@ body {
   align-content: center; }
 
 .form__input {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-family: inherit;
-  color: inherit;
+  color: #fff;
   padding: 1.5rem 2rem;
   background-color: #02081F;
   border-bottom: 0.1rem solid #BAFF00;
@@ -260,7 +267,8 @@ body {
   border-left: none;
   border-right: none;
   width: 80%;
-  display: block; }
+  display: block;
+  opacity: 0.5; }
   @media (max-width: 75em) {
     .form__input {
       font-size: 3rem; } }
@@ -269,7 +277,8 @@ body {
       font-size: 1.5rem; } }
   .form__input:focus {
     outline: none;
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
 
 .form__btn {
   margin: auto; }
@@ -319,14 +328,14 @@ body {
   cursor: pointer; }
   .work__col-primary {
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-family: Arial, Helvetica, sans-serif; }
     .work__col-primary--sub {
       font-weight: 600;
-      font-size: 1.5rem;
+      font-size: 2.2rem;
       font-family: Arial, Helvetica, sans-serif; }
   .work__col-paragraph {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     opacity: .5; }
   .work__col path {
     stroke: #BAFF00; }
@@ -359,6 +368,12 @@ body {
   margin-left: auto;
   display: inline-block; }
 
+.work__row {
+  margin-left: 5rem; }
+  @media (max-width: 75em) {
+    .work__row {
+      margin-left: 0rem; } }
+
 .footer__con {
   display: flex;
   justify-content: center;
@@ -384,7 +399,8 @@ body {
 
 .row {
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 3.2rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media (max-width: 75em) {
@@ -452,9 +468,11 @@ body {
 
 .navigation {
   background-color: #02081F; }
+  .navigation__row {
+    margin-bottom: 0rem !important; }
   .navigation__nav {
     margin-left: auto;
-    width: 30%;
+    width: 35%;
     padding: 2rem 0; }
     @media (max-width: 75em) {
       .navigation__nav {

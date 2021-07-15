@@ -22,8 +22,13 @@
       transform: translateY(-1.5rem);
     }
   
-    &__row {
-      margin-left: 10rem;
+
+  }
+  &__row {
+    margin-left: 10rem;
+
+    @include respond(tab-land) {
+      margin-left: 0rem;
     }
   }
 
