@@ -1,5 +1,14 @@
 .about {
 
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+
+
   &__col {
     width: 100%;
   }
@@ -14,6 +23,16 @@
     color: $color-white;
     font-size: 1.5rem;
     opacity: .5;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+
   }
 
   &__items {
@@ -33,6 +52,13 @@
     position: absolute;
     left: 1rem;
     top: .5rem;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      width: 1.4rem;
+      height: 1.4rem;
+
+    }
 
   }
 

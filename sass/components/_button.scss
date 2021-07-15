@@ -4,12 +4,30 @@
   text-decoration: none;
   font-size: 1.5rem;
 
+  @include respond(tab-land) {
+    font-size: 3rem;
+    // width: 100%;
+  }
+
+  @include respond(phone) {
+    font-size: 1.5rem;
+  }
+
   &:link,
   &:visited {
     border: .1rem solid $color-secondary;
     padding: 1rem;
     width: 10%;
     text-align: center;
+
+    @include respond(tab-land) {
+      width: 30%;
+    }
+
+    @include respond(phone) {
+      width: 50%;
+    }
+
   }
 
   // &:hover,
@@ -35,7 +53,7 @@
     }
 
     &:hover {
-      border: 0;
+      border: .1rem solid transparent;
       font-weight: 600;
     }
 

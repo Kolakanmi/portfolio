@@ -11,29 +11,58 @@ html {
 body {
   box-sizing: border-box;
   background-color: #02081F; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .heading-paragraph {
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 2.4rem; }
+  @media (max-width: 75em) {
+    .heading-paragraph {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-paragraph {
+      font-size: 1.5rem; } }
   .heading-paragraph--sub {
     display: inline-block;
     width: 40%; }
+    @media (max-width: 75em) {
+      .heading-paragraph--sub {
+        font-size: 3rem;
+        width: 100%; } }
+    @media (max-width: 37.5em) {
+      .heading-paragraph--sub {
+        font-size: 1.5rem; } }
   .heading-paragraph--span {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     opacity: .5; }
+    @media (max-width: 75em) {
+      .heading-paragraph--span {
+        font-size: 3rem;
+        width: 100%; } }
+    @media (max-width: 37.5em) {
+      .heading-paragraph--span {
+        font-size: 1.5rem; } }
 
 .heading-main {
   color: #fff;
   font-weight: 700;
-  font-size: 5.8rem;
+  font-size: 6.2rem;
   font-family: sans-serif; }
+  @media (max-width: 37.5em) {
+    .heading-main {
+      font-size: 3rem; } }
   .heading-main--sub {
     color: #fff;
     font-weight: 700;
-    font-size: 5.8rem;
+    font-size: 6.2rem;
     font-family: sans-serif;
     opacity: .5; }
+    @media (max-width: 37.5em) {
+      .heading-main--sub {
+        font-size: 3rem; } }
 
 .heading-secondary {
   color: #fff;
@@ -77,6 +106,13 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+@media (max-width: 75em) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; } }
+
 .about__col {
   width: 100%; }
 
@@ -89,6 +125,13 @@ body {
   color: #fff;
   font-size: 1.5rem;
   opacity: .5; }
+  @media (max-width: 75em) {
+    .about__list {
+      font-size: 3rem;
+      margin-bottom: 3rem; } }
+  @media (max-width: 37.5em) {
+    .about__list {
+      font-size: 1.5rem; } }
 
 .about__items {
   padding-left: 3rem;
@@ -105,6 +148,11 @@ body {
   position: absolute;
   left: 1rem;
   top: .5rem; }
+  @media (max-width: 75em) {
+    .about__items-span {
+      font-size: 3rem;
+      width: 1.4rem;
+      height: 1.4rem; } }
 
 .about__image-con {
   width: 100%;
@@ -139,11 +187,23 @@ body {
   color: #BAFF00;
   text-decoration: none;
   font-size: 1.5rem; }
+  @media (max-width: 75em) {
+    .button {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .button {
+      font-size: 1.5rem; } }
   .button:link, .button:visited {
     border: 0.1rem solid #BAFF00;
     padding: 1rem;
     width: 10%;
     text-align: center; }
+    @media (max-width: 75em) {
+      .button:link, .button:visited {
+        width: 30%; } }
+    @media (max-width: 37.5em) {
+      .button:link, .button:visited {
+        width: 50%; } }
   .button--overlay {
     position: relative; }
     .button--overlay::before {
@@ -158,18 +218,29 @@ body {
       background-color: #BAFF00;
       opacity: 0; }
     .button--overlay:hover {
-      border: 0;
+      border: .1rem solid transparent;
       font-weight: 600; }
     .button--overlay:hover::before {
       opacity: 0.1; }
 
-.feature-box {
+@media (max-width: 75em) {
+  .feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0rem; } }
+
+.feature-box__con {
   border: 0.1rem solid #BAFF00;
   padding: 4rem;
   transition: transform .3s; }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
-  .feature-box__row {
+  @media (max-width: 75em) {
+    .feature-box__con {
+      width: 100%; } }
+  .feature-box__con:hover {
+    transform: translateY(-1.5rem); }
+  .feature-box__con__row {
     margin-left: 10rem; }
 
 .form__group {
@@ -190,12 +261,26 @@ body {
   border-right: none;
   width: 80%;
   display: block; }
+  @media (max-width: 75em) {
+    .form__input {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .form__input {
+      font-size: 1.5rem; } }
   .form__input:focus {
     outline: none;
     color: #fff; }
 
 .form__btn {
   margin: auto; }
+
+@media (max-width: 75em) {
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0rem; } }
 
 .work__img {
   width: 100%; }
@@ -207,6 +292,9 @@ body {
   height: 0rem;
   border-top: 0.5px solid #BAFF00;
   margin-left: 2rem; }
+  @media (max-width: 75em) {
+    .work__span {
+      display: none; } }
 
 .work__flex {
   display: flex;
@@ -280,9 +368,16 @@ body {
   display: inline-block; }
 
 .footer__link:link, .footer__link:visited {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   text-decoration: none;
   color: #fff; }
+  @media (max-width: 75em) {
+    .footer__link:link, .footer__link:visited {
+      font-size: 3rem;
+      display: inline-block; } }
+  @media (max-width: 37.5em) {
+    .footer__link:link, .footer__link:visited {
+      font-size: 1.5rem; } }
 
 .footer__link:hover, .footer__link:active {
   text-decoration: underline; }
@@ -292,18 +387,45 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 75em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      max-width: 100%;
+      padding: 0; } }
+  @media (max-width: 75em) {
+    .row {
+      max-width: 100%;
+      padding: 0 3.2rem; } }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   .row [class^="col-"] {
     float: left; }
+    @media (max-width: 75em) {
+      .row [class^="col-"] {
+        width: 100%; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 75em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0rem; } }
+    @media (max-width: 75em) {
+      .row [class^="col-"] {
+        margin-right: 0;
+        margin-bottom: 6rem; } }
   .row .col-1-of-2 {
     width: calc((100% -  6rem) / 2); }
+    @media (max-width: 75em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
+    @media (max-width: 75em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
 
 .header {
   background-color: #02081F;
@@ -312,27 +434,46 @@ body {
     color: #BAFF00;
     text-decoration: none;
     opacity: 1;
-    font-size: 1.5rem; }
+    font-size: 2.4rem; }
+    @media (max-width: 75em) {
+      .header__link:link, .header__link:visited {
+        font-size: 3rem;
+        width: 100%; } }
+    @media (max-width: 37.5em) {
+      .header__link:link, .header__link:visited {
+        font-size: 1.5rem; } }
   .header__link:hover, .header__link:active {
     opacity: .5; }
   .header__flex {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 95vh;
     flex-direction: column; }
 
 .navigation {
   background-color: #02081F; }
   .navigation__nav {
     margin-left: auto;
-    width: 21%;
+    width: 30%;
     padding: 2rem 0; }
+    @media (max-width: 75em) {
+      .navigation__nav {
+        width: 100%;
+        display: flex;
+        justify-content: center; } }
   .navigation__list {
     list-style: none; }
   .navigation__item {
     display: inline-block;
     margin: 1rem;
-    font-size: 1.5rem; }
+    font-size: 2.4rem; }
+    @media (max-width: 75em) {
+      .navigation__item {
+        font-size: 2.5rem;
+        margin: 1.5rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__item {
+        font-size: 1.5rem; } }
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none;
     color: #BAFF00;
@@ -340,7 +481,13 @@ body {
   .navigation__link:active, .navigation__link:hover {
     opacity: .5; }
   .navigation__image {
-    width: 1.5rem; }
+    width: 2.4rem; }
+    @media (max-width: 75em) {
+      .navigation__image {
+        width: 3.5rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__image {
+        width: 1.5rem; } }
 
 .section-about {
   background-color: #02081F; }

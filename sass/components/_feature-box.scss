@@ -1,13 +1,31 @@
 .feature-box {
-  border: .1rem solid $color-secondary;
-  padding: 4rem;
-  transition: transform .3s;
 
-  &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0rem;
   }
 
-  &__row {
-    margin-left: 10rem;
+  &__con {
+    border: .1rem solid $color-secondary;
+    padding: 4rem;
+    transition: transform .3s;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem);
+    }
+  
+    &__row {
+      margin-left: 10rem;
+    }
   }
+
 }
+
