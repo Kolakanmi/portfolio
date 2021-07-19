@@ -7,13 +7,10 @@ body {
   color: $color-white;
   font-size: 1.8rem;
 
-  @include respond(tab-land) {
-    font-size: 3rem;
-  }
 
-  @include respond(phone) {
-    font-size: 1.5rem;
-  }
+  // @include respond(phone) {
+  //   font-size: 1.5rem;
+  // }
 
   &--sub {
     display: inline-block;
@@ -21,14 +18,14 @@ body {
     width: 40%;
     line-height: 2rem;
 
-    @include respond(tab-land) {
-      font-size: 3.5rem;
+    @include respond(tab-port) {
+      //font-size: 3.5rem;
       width: 100%;
     }
 
-    @include respond(phone) {
-      font-size: 1.5rem;
-    }
+    // @include respond(phone) {
+    //   font-size: 1.5rem;
+    // }
   }
 
   &--span {
@@ -52,14 +49,22 @@ body {
   color: $color-white;
   margin-bottom: 3rem;
 
-  @include respond(phone) {
-    font-size: 3rem;
-  }
+  // @include respond(phone) {
+  //   font-size: 3rem;
+  // }
 
   &--sup {
     display: block;
     font-weight: 700;
     font-size: 6rem;
+
+    @include respond(tab-port) {
+      font-size: 8vw;
+    }
+
+    @include respond(phone) {
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -69,8 +74,12 @@ body {
     font-size: 6rem;
     opacity: .5;
 
+    @include respond(tab-port) {
+      font-size: 8vw;
+    }
+
     @include respond(phone) {
-      font-size: 3rem;
+      font-size: 5rem;
     }
   }
 }

@@ -7,6 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 52%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -21,24 +30,14 @@ body {
 .heading-paragraph {
   color: #fff;
   font-size: 1.8rem; }
-  @media (max-width: 75em) {
-    .heading-paragraph {
-      font-size: 3rem; } }
-  @media (max-width: 37.5em) {
-    .heading-paragraph {
-      font-size: 1.5rem; } }
   .heading-paragraph--sub {
     display: inline-block;
     font-size: 1.8rem;
     width: 40%;
     line-height: 2rem; }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
       .heading-paragraph--sub {
-        font-size: 3.5rem;
         width: 100%; } }
-    @media (max-width: 37.5em) {
-      .heading-paragraph--sub {
-        font-size: 1.5rem; } }
   .heading-paragraph--span {
     color: #fff;
     font-size: 1.8rem;
@@ -55,22 +54,28 @@ body {
 .heading-main {
   color: #fff;
   margin-bottom: 3rem; }
-  @media (max-width: 37.5em) {
-    .heading-main {
-      font-size: 3rem; } }
   .heading-main--sup {
     display: block;
     font-weight: 700;
     font-size: 6rem; }
+    @media (max-width: 56.25em) {
+      .heading-main--sup {
+        font-size: 8vw; } }
+    @media (max-width: 37.5em) {
+      .heading-main--sup {
+        font-size: 5rem; } }
   .heading-main--sub {
     color: #fff;
     display: block;
     font-weight: 700;
     font-size: 6rem;
     opacity: .5; }
+    @media (max-width: 56.25em) {
+      .heading-main--sub {
+        font-size: 8vw; } }
     @media (max-width: 37.5em) {
       .heading-main--sub {
-        font-size: 3rem; } }
+        font-size: 5rem; } }
 
 .heading-secondary {
   color: #fff;
@@ -201,6 +206,10 @@ body {
 
 .u-align-text-center {
   text-align: center; }
+
+.color-secondary {
+  color: #BAFF00;
+  opacity: 1; }
 
 .w-half {
   width: 50%; }
@@ -556,18 +565,20 @@ body {
     @media (max-width: 75em) {
       .header__link:link, .header__link:visited {
         width: 100%; } }
-    @media (max-width: 37.5em) {
-      .header__link:link, .header__link:visited {
-        font-size: 1.5rem; } }
   .header__link:hover, .header__link:active {
     opacity: .5; }
   .header__flex {
     display: flex;
     align-items: center;
-    height: 90vh; }
+    height: 95vh; }
+    @media (max-width: 37.5em) {
+      .header__flex {
+        align-items: flex-start;
+        margin-top: 15vh; } }
 
 .navigation {
-  background-color: #02081F; }
+  background-color: #02081F;
+  height: 5vh; }
   .navigation__row {
     margin-bottom: 0rem !important; }
   .navigation__nav {
