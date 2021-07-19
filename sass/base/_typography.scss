@@ -1,6 +1,11 @@
+body {
+  font-family: 'ProductSans';
+}
+
+
 .heading-paragraph {
   color: $color-white;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 
   @include respond(tab-land) {
     font-size: 3rem;
@@ -12,10 +17,12 @@
 
   &--sub {
     display: inline-block;
+    font-size: 1.8rem;
     width: 40%;
+    line-height: 2rem;
 
     @include respond(tab-land) {
-      font-size: 3rem;
+      font-size: 3.5rem;
       width: 100%;
     }
 
@@ -26,8 +33,9 @@
 
   &--span {
     color: $color-white;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     opacity: .5;
+    line-height: 3.5rem;
 
     @include respond(tab-land) {
       font-size: 3rem;
@@ -42,24 +50,28 @@
 
 .heading-main {
   color: $color-white;
-  font-weight: 700;
-  font-size: 6rem;
-  font-family: sans-serif;
+  margin-bottom: 3rem;
 
   @include respond(phone) {
     font-size: 3rem;
+  }
+
+  &--sup {
+    display: block;
+    font-weight: 700;
+    font-size: 6rem;
   }
 
   &--sub {
-  color: $color-white;
-  font-weight: 700;
-  font-size: 6rem;
-  font-family: sans-serif;
-  opacity: .5;
+    color: $color-white;
+    display: block;
+    font-weight: 700;
+    font-size: 6rem;
+    opacity: .5;
 
-  @include respond(phone) {
-    font-size: 3rem;
-  }
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -67,7 +79,6 @@
   color: $color-white;
   font-weight: 700;
   font-size: 3.8rem;
-  font-family: sans-serif;
   display: inline-block;
 }
 
@@ -75,12 +86,126 @@
   color: $color-white;
   font-weight: 400;
   font-size: 2.4rem;
-  font-family: Arial, Helvetica, sans-serif;
 
   &--sub {
     color: $color-white;
     font-weight: 600;
     font-size: 2.4rem;
-    font-family: Arial, Helvetica, sans-serif;
   }
+}
+
+.heading-tertiary {
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: 'ProductSans';
+}
+
+.horizontal-line {
+  display: inline-block;
+  width: 20%;
+  opacity: .5;
+  height: 0rem;
+  border-top: .5px solid $color-secondary;
+  margin-left: 2rem;
+
+  @include respond(tab-land) {
+    display: none;
+  }
+}
+
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../../fonts/ProductSans-Thin.woff') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../../fonts/ProductSans-Light.woff') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../../fonts/ProductSans-Regular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../../fonts/ProductSans-Medium.woff') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../../fonts/ProductSans-Bold.woff') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../../fonts/ProductSans-Black.woff') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+//SF MONO FONT
+
+// @font-face {
+//   font-family: 'SFMono';
+//   src: url('../../fonts/SFMonoLight.woff') format('truetype');
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'SFMono';
+  src: url('../../fonts/SFMonoLight.woff') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFMono';
+  src: url('../../fonts/SFMonoRegular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFMono';
+  src: url('../../fonts/SFMonoMedium.woff') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'SFMono';
+  src: url('../../fonts/SFMonoSemibold.woff') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFMono';
+  src: url('../../fonts/SFMonoBold.woff') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFMono';
+  src: url('../../fonts/SFMonoHeavy.woff') format('truetype');
+  font-weight: 800;
+  font-style: normal;
 }

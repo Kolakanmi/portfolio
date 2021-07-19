@@ -7,28 +7,35 @@
 
   &__nav {
     margin-left: auto;
-    width: 35%;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    // width: 35%;
+    padding: 3rem 0;
     
     @include respond(tab-land) {
       width: 100%;
-      display: flex;
+      
       justify-content: center;
     }
   }
 
   &__list {
     list-style: none;
+    text-align: right;
   }
 
   &__item {
     display: inline-block;
-    margin: 1rem;
-    font-size: 2.4rem;
+    margin: 0 1.5rem;
+    font-size: 1.8rem;
+
+    &:nth-child(-n+2) {
+      margin-right: 5rem;
+    }
 
     @include respond(tab-land) {
-      font-size: 2.5rem;
-      margin: 1.5rem;
+      //font-size: 2.5rem;
+      // margin: 1.5rem;
     }
 
     @include respond(phone) {
@@ -50,10 +57,10 @@
   }
 
   &__image {
-    width: 2.4rem;
+    width: 2.2rem;
 
     @include respond(tab-land) {
-      width: 3.5rem;
+      // width: 3.5rem;
     }
 
     @include respond(phone) {

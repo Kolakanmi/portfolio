@@ -1,11 +1,12 @@
 .button {
-  display: block;
+  display: inline-block;
   color: $color-secondary;
   text-decoration: none;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-family: 'SFMono';
 
   @include respond(tab-land) {
-    font-size: 3rem;
+    // font-size: 3rem;
     // width: 100%;
   }
 
@@ -16,16 +17,15 @@
   &:link,
   &:visited {
     border: .1rem solid $color-secondary;
-    padding: 1rem;
-    width: 20%;
+    padding: 1rem 2rem;
     text-align: center;
 
     @include respond(tab-land) {
-      width: 30%;
+      // width: 30%;
     }
 
     @include respond(phone) {
-      width: 50%;
+      // width: 50%;
     }
 
   }
@@ -54,12 +54,16 @@
 
     &:hover {
       border: .1rem solid transparent;
-      font-weight: 600;
+      //  font-weight: 600;
     }
 
     &:hover::before {
       opacity: 0.1;
     }
+  }
+
+  &--big {
+    min-width: 15rem;
   }
 }
 

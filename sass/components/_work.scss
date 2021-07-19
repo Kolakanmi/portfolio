@@ -10,29 +10,34 @@
 
   &__img {
     width: 100%;
-  }
-  
-  &__span {
-    display: inline-block;
-    width: 20%;
-    opacity: .5;
-    height: 0rem;
-    border-top: .5px solid $color-secondary;
-    margin-left: 2rem;
+    transition: all .3s;
 
-    @include respond(tab-land) {
-      display: none;
+    &:hover {
+      transform: scale(1.05);
     }
   }
+  
+  // &__span {
+  //   display: inline-block;
+  //   width: 20%;
+  //   opacity: .5;
+  //   height: 0rem;
+  //   border-top: .5px solid $color-secondary;
+  //   margin-left: 2rem;
 
-  &__flex {
-    display: flex;
-    align-content: space-around;
-    text-align: left;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
+  //   @include respond(tab-land) {
+  //     display: none;
+  //   }
+  // }
+
+  // &__flex {
+  //   display: flex;
+  //   align-content: space-around;
+  //   text-align: left;
+  //   flex-direction: column;
+  //   height: 100%;
+  //   width: 100%;
+  // }
 
   &__box {
     display: flex;
@@ -44,24 +49,25 @@
   &__col {
     border: .1rem solid $color-secondary;
     background-color: transparent;
-    padding: 4rem;
+    padding: 3.7rem;
     position: relative;
     color: $color-white;
     cursor: pointer;
 
     &-primary {
-      font-weight: 400;
-      font-size: 4rem;
-      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 3rem;
+
       &--sub {
         font-weight: 600;
-        font-size: 2.2rem;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.8rem;
       }
     }
   
     &-paragraph {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+      font-family: 'SFMono';
+      line-height: 2.5rem;
       opacity: .5;
     }
 
@@ -71,7 +77,7 @@
 
 
     &:hover {
-      border: 0;
+      border: .1rem solid transparent;;
       // background-color: $color-secondary;
       // opacity: .7;
       color: $color-secondary;
@@ -93,7 +99,7 @@
       left: 0;
       background-color: $color-secondary;
       opacity: 0;
-      color: $color-secondary;
+      
     }
 
     &:hover::before {
