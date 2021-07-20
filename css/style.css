@@ -47,6 +47,15 @@ body {
       .heading-paragraph--span {
         font-size: 2rem;
         width: 100%; } }
+  .heading-paragraph--span-clear {
+    color: #fff;
+    font-size: 1.8rem;
+    opacity: 1;
+    line-height: 3.5rem; }
+    @media (max-width: 75em) {
+      .heading-paragraph--span-clear {
+        font-size: 2rem;
+        width: 100%; } }
 
 .heading-main {
   color: #fff;
