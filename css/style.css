@@ -28,8 +28,7 @@ body {
   font-family: 'ProductSans'; }
 
 .heading-paragraph {
-  color: #fff;
-  font-size: 1.8rem; }
+  color: #fff; }
   .heading-paragraph--sub {
     display: inline-block;
     font-size: 1.8rem;
@@ -37,6 +36,7 @@ body {
     line-height: 2rem; }
     @media (max-width: 56.25em) {
       .heading-paragraph--sub {
+        font-size: 3.5rem;
         width: 100%; } }
   .heading-paragraph--span {
     color: #fff;
@@ -45,11 +45,8 @@ body {
     line-height: 3.5rem; }
     @media (max-width: 75em) {
       .heading-paragraph--span {
-        font-size: 3rem;
+        font-size: 2rem;
         width: 100%; } }
-    @media (max-width: 37.5em) {
-      .heading-paragraph--span {
-        font-size: 1.5rem; } }
 
 .heading-main {
   color: #fff;
@@ -238,7 +235,7 @@ body {
 .w-4-fifth {
   width: 80%; }
 
-@media (max-width: 75em) {
+@media (max-width: 56.25em) {
   .about {
     display: flex;
     flex-direction: column;
@@ -256,20 +253,22 @@ body {
 .about__list {
   list-style: none;
   color: #fff;
-  font-size: 1.8rem;
   opacity: .5; }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     .about__list {
-      margin-bottom: 3rem; } }
-  @media (max-width: 37.5em) {
-    .about__list {
-      font-size: 1.5rem; } }
+      margin-bottom: 2rem; } }
 
 .about__items {
   padding-left: 3rem;
   position: relative; }
   .about__items:not(:last-child) {
     margin-bottom: 2rem; }
+
+.about__items-text {
+  font-size: 1.8rem; }
+  @media (max-width: 56.25em) {
+    .about__items-text {
+      font-size: 2rem; } }
 
 .about__items-span {
   width: .7rem;
@@ -280,7 +279,7 @@ body {
   position: absolute;
   left: 1rem;
   top: .9rem; }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     .about__items-span {
       font-size: 3rem;
       width: 1.4rem;
@@ -350,7 +349,7 @@ body {
 
 .feature-box {
   color: #fff; }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     .feature-box {
       display: flex;
       flex-direction: column;
@@ -361,14 +360,22 @@ body {
     border: 0.1rem solid #BAFF00;
     padding: 4rem;
     transition: transform .3s; }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
+      .feature-box__con {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto !important;
+        display: block; } }
+    @media (max-width: 56.25em) {
       .feature-box__con {
         width: 100%; } }
     .feature-box__con:hover {
       transform: translateY(-1.5rem); }
   .feature-box__row {
     margin-left: 10rem; }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
       .feature-box__row {
         margin-left: 0rem; } }
 
@@ -377,6 +384,9 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 56.25em) {
+    .form {
+      width: 100%; } }
   .form__group {
     display: block; }
   .form__input {
@@ -403,7 +413,7 @@ body {
   .form__btn {
     margin: auto; }
 
-@media (max-width: 75em) {
+@media (max-width: 56.25em) {
   .work {
     display: flex;
     flex-direction: column;
@@ -414,6 +424,17 @@ body {
 .work__img {
   width: 100%;
   transition: all .3s; }
+  @media (max-width: 75em) {
+    .work__img {
+      width: 100%;
+      height: 32rem; } }
+  @media (max-width: 56.25em) {
+    .work__img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+      display: block; } }
   .work__img:hover {
     transform: scale(1.05); }
 
@@ -430,6 +451,18 @@ body {
   position: relative;
   color: #fff;
   cursor: pointer; }
+  @media (max-width: 75em) {
+    .work__col {
+      width: 100%;
+      height: 32rem; } }
+  @media (max-width: 56.25em) {
+    .work__col {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto !important;
+      display: block; } }
   .work__col-primary {
     font-weight: 500;
     font-size: 3rem; }
@@ -473,7 +506,7 @@ body {
 
 .work__row {
   margin-left: 5rem; }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     .work__row {
       margin-left: 0rem; } }
 
@@ -483,19 +516,17 @@ body {
   align-items: center; }
 
 .footer__paragraph {
-  display: inline-block; }
+  display: inline-block;
+  width: inherit;
+  color: #fff;
+  opacity: 1; }
 
 .footer__link:link, .footer__link:visited {
-  font-size: 2.4rem;
   text-decoration: none;
   color: #fff; }
   @media (max-width: 75em) {
     .footer__link:link, .footer__link:visited {
-      font-size: 3rem;
       display: inline-block; } }
-  @media (max-width: 37.5em) {
-    .footer__link:link, .footer__link:visited {
-      font-size: 1.5rem; } }
 
 .footer__link:hover, .footer__link:active {
   text-decoration: underline; }
@@ -509,40 +540,39 @@ body {
     @media (max-width: 75em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media (max-width: 37.5em) {
-    .row {
-      max-width: 100%;
-      padding: 0; } }
   @media (max-width: 75em) {
     .row {
-      max-width: 100%;
+      max-width: 99rem;
       padding: 0 3.2rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      max-width: 100%; } }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   .row [class^="col-"] {
     float: left; }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100%; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 75em) {
+      @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0rem; } }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
       .row [class^="col-"] {
         margin-right: 0;
         margin-bottom: 6rem; } }
   .row .col-1-of-2 {
     width: calc((100% -  6rem) / 2); }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
       .row .col-1-of-2 {
         width: 100%; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
-    @media (max-width: 75em) {
+    @media (max-width: 56.25em) {
       .row .col-1-of-3 {
         width: 100%; } }
   .row .col-1-of-5 {

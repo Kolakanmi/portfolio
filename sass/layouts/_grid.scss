@@ -11,34 +11,36 @@
     } 
   }
 
-  @include respond(phone) {
-    max-width: 100%;
-    padding: 0;
+  @include respond(tab-land) {
+    max-width: 99rem;
+    padding: 0 3.2rem;
   }
 
-  @include respond(tab-land) {
+  @include respond(phone) {
     max-width: 100%;
-    padding: 0 3.2rem;
-  } 
+    // padding: 0;
+  }
+
+  // 
 
   @include clearfix;
 
   [class^="col-"] {
     float: left;
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       width: 100%;
     }
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal; 
 
-      @include respond(tab-land) {
+      @include respond(tab-port) {
         margin-right: 0rem;
       }
     }
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       margin-right: 0;
       margin-bottom: $gutter-vertical-small;
     }  
@@ -46,7 +48,8 @@
 
   .col-1-of-2 {
     width: calc((100% -  #{$gutter-horizontal}) / 2);
-    @include respond(tab-land) {
+
+    @include respond(tab-port) {
       width: 100%;
     }
 
@@ -54,7 +57,8 @@
 
   .col-1-of-3 {
     width:  calc((100% - 2 * #{$gutter-horizontal}) / 3);
-    @include respond(tab-land) {
+
+    @include respond(tab-port) {
       width: 100%;
     }
 

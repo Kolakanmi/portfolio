@@ -5,6 +5,11 @@
   margin-left: auto;
   margin-right: auto;
 
+  @include respond(tab-port) {
+    width: 100%;
+    // object-fit: cover;
+  }
+
   &__group {
     display: block;
     

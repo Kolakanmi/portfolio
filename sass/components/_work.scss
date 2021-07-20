@@ -1,6 +1,6 @@
 .work {
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +11,21 @@
   &__img {
     width: 100%;
     transition: all .3s;
+
+    @include respond(tab-land) {
+      width: 100%;
+      height: 32rem;
+      // object-fit: cover;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      // object-fit: cover;
+    }
 
     &:hover {
       transform: scale(1.05);
@@ -53,6 +68,22 @@
     position: relative;
     color: $color-white;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      width: 100%;
+      height: 32rem;
+      // object-fit: cover;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto !important;
+      display: block;
+      // object-fit: cover;
+    }
 
     &-primary {
       font-weight: 500;
@@ -122,7 +153,7 @@
   &__row {
     margin-left: 5rem;
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       margin-left: 0rem;
     }
   }
